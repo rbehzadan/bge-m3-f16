@@ -1,0 +1,9 @@
+services:
+  bge-m3-f16:
+    container_name: bge-m3-f16
+    image: rbehzadan/bge-m3-f16
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - "8080:8080"
