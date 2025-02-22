@@ -1,6 +1,6 @@
 # BGE-M3-F16 Docker Image
 
-This repository provides a multi-architecture (AMD64 & ARM64) Docker image for serving BGE-M3 embeddings using `llama.cpp`.
+This repository provides a multi-architecture (AMD64 & ARM64) Docker image for serving [BGE-M3](https://huggingface.co/BAAI/bge-m3) embeddings using [llama.cpp](https://github.com/ggml-org/llama.cpp).
 
 ## Usage
 
