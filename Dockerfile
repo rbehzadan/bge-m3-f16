@@ -38,5 +38,5 @@ COPY --from=builder /tmp/bge-m3-F16.gguf /models
 EXPOSE 8080
 
 ENTRYPOINT ["/usr/local/bin/llama-server", "--host", "0.0.0.0", "--port", "8080"]
-CMD ["--embeddings", "--model", "/models/bge-m3-F16.gguf"]
+CMD ["--embeddings", "--ctx-size", "0", "--ubatch-size", "8192", "--batch-size", "8192", "--model", "/models/bge-m3-F16.gguf"]
 
