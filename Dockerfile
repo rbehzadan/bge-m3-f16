@@ -13,7 +13,7 @@ RUN apt-get update && \
 RUN wget -O /tmp/bge-m3-F16.gguf \
     https://huggingface.co/rbehzadan/bge-m3-gguf/resolve/main/bge-m3-F16.gguf?download=true
 
-RUN git clone https://github.com/ggerganov/llama.cpp.git /llama.cpp
+RUN git clone https://github.com/ggml-org/llama.cpp.git /llama.cpp
 
 WORKDIR /llama.cpp
 
